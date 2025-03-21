@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Minh Anh</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+            font-size: 55px; /* Chữ lớn, dễ đọc */
+            background: #fce4ec; /* Hồng pastel rất nhẹ */
+            color: #4a4a4a; /* Màu chữ xám đậm, dịu mắt */
+            font-family: 'Poppins', sans-serif; /* Font trung lập */
+            font-weight: bold;
+            text-shadow: 3px 3px 6px rgba(255, 255, 255, 0.8);
+            user-select: none;
+            padding: 40px;
+            width: 90%;
+            max-width: 900px;
+            background-color: rgba(255, 255, 255, 0.7); /* Lớp phủ mờ nhẹ */
+            border-radius: 20px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <script>
+        const texts = [
+            "hi my bbi",
+            "whenever i think",
+            "i'm so stupid",
+            "and i can't be more stupid",
+            "that's the time",
+            "i did sth stupid x10 hm",
+            "im so sad",
+            "im so sorri",
+            "have a gud day bbi, see you and luv diu"
+        ];
+
+        let index = 0;
+        document.body.innerText = texts[index];
+
+        document.body.addEventListener("click", () => {
+            index = (index + 1) % texts.length;
+            document.body.innerText = texts[index];
+        });
+    </script>
+</body>
+</html>
